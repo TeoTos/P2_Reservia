@@ -89,6 +89,8 @@ html,body {
 }
 .marglogo {
     margin-bottom: 7px;
+    width: 120px;
+    height: 50px;
 }
 
 /*HEADER*/
