@@ -16,27 +16,27 @@
 <body>
 
     <nav class="sizeNav">
-        <div class="flexBetween">
-            <div>
+        <div class="sizeLiens  flexBetween">
+            <div class="mobileTitrePara">
                 <a href="#"><img class="marglogo" src="./assets/images/logo/Reservia.svg" alt="logo"></a>
             </div>
-            <div class="sizeLiens flexAround">
-                <div class="sizeLien flexCentre bordureNav">
+             <div class="sizeLien12 flexCentre">
+                <div class="sizeLien sizeLienMobile flexCentre bordureNav">
                     <a class="colorLien2 decorationNone" href="#">Hébergements</a>
                 </div>
-                <div class="sizeLien flexCentre bordureNav">
+                <div class="sizeLien sizeLienMobile flexCentre bordureNav">
                     <a class="colorLien2 decorationNone" href="#">Activités</a>
-                </div>  
+                </div>
+             </div>  
                 <div class="sizeLien flexCentre bordureNav">
                     <a class="texteGras colorBleu decorationNone" href="#">S'inscrire</a>
                 </div>
-            </div>
         </div>
     </nav>
 
     <header>
         <section>
-            <div>
+            <div class="mobileTitrePara">
                 <h1 class="texteGras">Trouvez votre hébergements pour vos vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
@@ -47,18 +47,24 @@
                 <div class="recherche">
                     <input class="recherche flexCentre bordureNone paddingSearch" type="search" value="Marseille, France">
                 </div>
-                <div class="backBleu flexCentre buttonSearch">Rechercher</div>
+                <div class="backBleu flexCentre buttonSearch">
+                    <span class="mobileNone">Rechercher</span>
+                    <span class="desktopNone"><i class="fas fa-search"></i></span>
+                </div>
             </div>
-            <div class="filtre margFiltre">
+            <div class="mobileFiltreWrap filtre margFiltre">
                 <div class="margFiltreTitre"><h3>Filtres</h3></div>
-                <div class="flexBetween filtreTexteIcons">
+             <div class="flexAround">
+                <div class="mobileEconomiques flexBetween filtreTexteIcons">
                     <i class="fas fa-money-bill-wave fa-lg filtreIcons flexCentre"></i>
                     <div class="filtreTexte flexCentre">Economiques</div>
                 </div>
-                <div class="flexBetween filtreTexteIcons">
+                <div class="mobileFamiliales flexBetween filtreTexteIcons">
                     <i class="fas fa-child fa-lg filtreIcons flexCentre"></i>
                     <div class="filtreTexte flexCentre">Familiales</div>
                 </div>
+             </div>
+             <div class="mobileFiltreWrap flexAround">             
                 <div class="flexBetween filtreTexteIcons">
                     <i class="fas fa-heart fa-lg filtreIcons flexCentre"></i>
                     <div class="filtreTexte flexCentre">Romantiques</div>
@@ -67,6 +73,7 @@
                     <i class="fas fa-dog fa-lg filtreIcons flexCentre"></i>
                     <div class="filtreTexte flexCentre">Animaux autorisés</div>
                 </div>
+             </div>
             </div>
             <div class="info">
                 <div class="parentIcon flexCentre">
@@ -77,9 +84,9 @@
         </section>
     </header>
 
-    <section class="flexAround">
+    <section id="hebergements" class="flexAround">
         <div class="flexColumnAround sizeHebergements backGris blocHebergement">
-            <h3>Hébergements à Marseille</h3>
+            <h2>Hébergements à Marseille</h2>
             <div class="bloc1 flexBetween">
                 <div class="cubeHebergements flexColumnCentre">
                     <div class="imgHebergements1"></div>
@@ -173,7 +180,7 @@
         </div>
         <div class="sizePopulaires blocPopulaires backGris">
             <div class="flexBetween">
-                <h2 class="texteGras">Les plus Populaires</h2>
+                <h2 class="SizeTitrePop texteGras">Les plus Populaires</h2>
                 <div><i class="fas fa-chart-line fa-2x"></i></div>
             </div>
             <div class="flexColumnAround">
@@ -226,7 +233,7 @@
     </section>
 
     <section class="Activites">
-        <h2>Activités à Marseille</h2>
+        <h2 class="mobileTitrePara">Activités à Marseille</h2>
         <div class="blocActivites flexBetween">
             <div class="cubeActivites flexColumnCentre">
                 <div class="imgActivites1"></div>
